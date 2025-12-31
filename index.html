@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Year Firecracker Rewards</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game">
+<video autoplay muted loop class="bg-video">
+  <source src="nen.mp4" type="video/mp4">
+</video>
+
+
+  <!-- Cây thông -->
+  <img src="t.png" class="tree" />
+
+  <!-- Tên & thông tin chương trình -->
+  <div id="program-info">
+    <div id="program-name">🎁 CARD NJ New Year Firecracker Rewards </div>
+    <div id="program-detail">TRADE MORE GET REWARD MORE! 🎁</div>
+    <div id="program-game-info">
+      <p>📅 <strong>Event Period:</strong> 1/1/2026 – 31/1/2026</p>
+      <p>⏰ <strong>Valid Transaction Time:</strong> 3 PM – 3 AM (Nigeria Time)</p>
+      <p>💳 <strong>How to Play:</strong> 1 transaction = 1 point</p>
+      <p>🎁 <strong>Reward:</strong> Collect 6 points to open a gift box!</p>
+      <p>⭐ <strong>Tip:</strong> Higher points = more chances to win bigger prizes!</p>
+    </div>
+  </div>
+
+<div id="game">
+  <video class="bg" src="nen.mp4" autoplay muted loop></video>
+
+  <!-- CỤM CÂY -->
+  <div class="tree-wrap">
+    <img src="t.png" class="tree">
+
+    <!-- QUÀ TREO TRÊN CÂY -->
+    <div class="gifts">
+      <div class="gift" data-index="0"><img src="1.png" autoplay muted loop playsinline></img></div>
+      <div class="gift" data-index="1"><img src="2.png" autoplay muted loop playsinline></img></div>
+      <div class="gift" data-index="2"><img src="3.png" autoplay muted loop playsinline></img></div>
+      <div class="gift" data-index="3"><img src="4.png" autoplay muted loop playsinline></img></div>
+      <div class="gift" data-index="4"><img src="5.png" autoplay muted loop playsinline></img></div>
+      <div class="gift" data-index="5"><img src="6.png" autoplay muted loop playsinline></img></div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Popup chúc mừng -->
+  <div id="popup" aria-hidden="true">
+    <div id="popup-content">
+      <img id="popup-box" src="">
+      <div id="popup-text"></div>
+    </div>
+  </div>
+
+  <!-- Nút Replay -->
+  <button id="replay" class="hidden">Replay</button>
+
+  <!-- Canvas pháo hoa -->
+  <canvas id="fxCanvas"></canvas>
+
+  <!-- Canvas tuyết -->
+  <canvas id="snowCanvas"></canvas>
+
+  <!-- Âm thanh mở hộp -->
+  <audio id="openSound" src="open.mp3"></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
